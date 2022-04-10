@@ -27,13 +27,13 @@ persist_with: atlan_looker_demo_default_datagroup
 
 explore: customers {}
 
-explore: my_first_dbt_model {}
+# explore: my_first_dbt_model {}
 
-explore: my_second_dbt_model {}
+# explore: my_second_dbt_model {}
 
-explore: oo {}
+# explore: oo {}
 
-explore: oo_x {}
+# explore: oo_x {}
 
 explore: orders {}
 
