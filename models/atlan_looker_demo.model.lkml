@@ -51,4 +51,6 @@ explore: stg_orders_secure {}
 
 explore: stg_payments {}
 
-explore: customer_order_details {}
+explore: order_details {
+  from: customer_order_details
+}
