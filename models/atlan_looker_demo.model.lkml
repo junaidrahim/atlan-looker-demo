@@ -43,7 +43,10 @@ explore: raw_orders {}
 
 explore: raw_payments {}
 
-explore: stg_customers {}
+explore: stg_customers {
+  view_label: "Staging Customers"
+
+}
 
 explore: stg_orders {}
 
@@ -54,4 +57,22 @@ explore: stg_payments {}
 explore: order_details {
   view_label: "Order Details"
   from: customer_order_details
+}
+explore: order_detail_extended {
+  view_label: "Extended Explore from another explore -  Order Details"
+  from: order_detail_extended
+  view_name: order_detail_extended
+}
+
+
+explore: joined_stg_customer {
+  view_label: "Customers Orders"
+  from: stg_customers
+
+  join: stg_orders {
+    view_label: "Stg Orders"
+    relationship: one_to_many
+    sql_on: ${stg_orders.customer_id}=${joined_stg_customer.customer_id} ;;
+  }
+
 }
