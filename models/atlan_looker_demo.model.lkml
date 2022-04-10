@@ -52,5 +52,6 @@ explore: stg_orders_secure {}
 explore: stg_payments {}
 
 explore: order_details {
+  view_label: "Order Details"
   from: customer_order_details
 }
