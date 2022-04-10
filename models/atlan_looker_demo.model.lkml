@@ -56,16 +56,19 @@ explore: stg_payments {}
 
 explore: order_details {
   view_label: "Order Details"
+  description: "Order details coming from derived table view"
   from: customer_order_details
 }
 explore: order_detail_extended {
   view_label: "Extended Explore from another explore -  Order Details"
+  description: "Extened from another explore (derived table view)"
   from: order_detail_extended
   view_name: order_detail_extended
 }
 
 
 explore: joined_stg_customer {
+  description: "Underlying view name and explore name is different in lookml file, actual views names are stg_customers and stg_orders"
   view_label: "Customers Orders"
   from: stg_customers
 
