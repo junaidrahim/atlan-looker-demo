@@ -79,3 +79,5 @@ explore: joined_stg_customer {
   }
 
 }
+
+# explore: order_details_derived_columns {}
