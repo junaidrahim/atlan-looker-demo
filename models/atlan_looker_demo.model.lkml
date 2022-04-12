@@ -77,7 +77,6 @@ explore: joined_stg_customer {
     relationship: one_to_many
     sql_on: ${stg_orders.customer_id}=${joined_stg_customer.customer_id} ;;
   }
-
 }
 
-# explore: order_details_derived_columns {}
+explore: extenend_views_stg_customers {}
