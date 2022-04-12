@@ -10,8 +10,8 @@ view: order_detail_extended {
   dimension: order_status {
     description: "order status "
   }
-  # dimension: count {
-  #   description: ""
-  #   type: number
-  # }
+  dimension: count {
+    description: ""
+    type: number
+  }
 }
