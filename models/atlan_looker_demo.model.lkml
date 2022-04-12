@@ -79,4 +79,4 @@ explore: joined_stg_customer {
   }
 }
 
-explore: extenend_views_stg_customers {}
+explore: extended_views_stg_customers {}
