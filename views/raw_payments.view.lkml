@@ -30,20 +30,20 @@ view: raw_payments {
     sql: ${amount} ;;
   }
 
-  # dimension: id {
-  #   type: number
-  #   sql: ${TABLE}."ID" ;;
-  # }
+  dimension: id {
+    type: number
+    sql: ${TABLE}."ID" ;;
+  }
 
-  # dimension: order_id {
-  #   type: number
-  #   sql: ${TABLE}."ORDER_ID" ;;
-  # }
+  dimension: order_id {
+    type: number
+    sql: ${TABLE}."ORDER_ID" ;;
+  }
 
-  # dimension: payment_method {
-  #   type: string
-  #   sql: ${TABLE}."PAYMENT_METHOD" ;;
-  # }
+  dimension: payment_method {
+    type: string
+    sql: ${TABLE}."PAYMENT_METHOD" ;;
+  }
 
   measure: count {
     type: count
