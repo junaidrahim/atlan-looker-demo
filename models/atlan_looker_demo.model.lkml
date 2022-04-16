@@ -66,7 +66,9 @@ explore: order_detail_extended {
   view_name: order_detail_extended
 }
 
-
+explore: order_extended_explore {
+  extends: [order_details,order_detail_extended]
+}
 explore: joined_stg_customer {
   description: "Underlying view name and explore name is different in lookml file, actual views names are stg_customers and stg_orders"
   view_label: "Customers Orders"
